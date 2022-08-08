@@ -1,0 +1,24 @@
+@mixin bounce($translationStart: 0px, $translationDistance: 60px, $animationDuration, $animationIteration, $animationTiming) {
+  @keyframes bounceIn {
+    0%,
+    100% {
+      transform: translateY($translationStart);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(calc($translationDistance / 2));
+    }
+  }
+  animation-name: bounceIn;
+  animation-duration: $animationDuration;
+  animation-iteration-count: $animationIteration;
+  animation-timing-function: $animationTiming;
+}
+
+.bounce {
+  background-color: orange;
+  border-radius: 50px;
+  height: 6rem;
+  width: 6rem;
+  @include bounce(100px, 60px, 2s, infinite, linear);
+}

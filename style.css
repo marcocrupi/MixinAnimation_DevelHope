@@ -1,0 +1,21 @@
+.bounce {
+  background-color: orange;
+  border-radius: 50px;
+  height: 6rem;
+  width: 6rem;
+  animation-name: bounceIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes bounceIn {
+  0%, 100% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
