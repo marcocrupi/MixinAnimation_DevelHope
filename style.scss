@@ -6,7 +6,7 @@
       opacity: 1;
     }
     50% {
-      transform: translateY(calc($translationDistance / 2));
+      transform: translateY(calc($translationDistance));
     }
   }
   animation-name: bounceIn;
@@ -20,5 +20,5 @@
   border-radius: 50px;
   height: 6rem;
   width: 6rem;
-  @include bounce(100px, 60px, 2s, infinite, linear);
+  @include bounce(100px, 360px, 2s, infinite, linear);
 }
