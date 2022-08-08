@@ -6,7 +6,7 @@
       opacity: 1;
     }
     50% {
-      transform: translateY(calc($translationDistance));
+      transform: translateY($translationDistance);
     }
   }
   animation-name: bounceIn;
